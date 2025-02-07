@@ -31,6 +31,7 @@ const route = useRoute();
 const categories = computed(() => parseCategoryQueryParam(
     route.query.categories
 ));
+
 const filteredProductsByRange = computed(() => getFilteredProductsByRange({ 
     categories: categories.value 
 }));
@@ -52,7 +53,7 @@ function getCategoriesLink(categories: readonly Category[]) {
             <ProductRangeWrapper v-if="products.length" :key="range" :range="range">
                 <div class="row">
                     <ProductCard v-for="product in products" :key="product.productCode" :product="product"
-                        :class="product.size === 'big' ? 'col-lg-6 col-md-6' : 'col-lg-3 col-md-6'" />
+                        :class="[product.size === 'big' ? 'col-lg-6 col-md-6' : 'col-lg-3 col-md-6']" />
                 </div>
             </ProductRangeWrapper>
         </template>

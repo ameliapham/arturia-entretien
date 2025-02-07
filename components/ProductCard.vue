@@ -4,7 +4,7 @@ import type { Product } from "@/composables/Product";
 
 type Props = {
   product: Product;
-  class?: string;
+  class?: string | string[];
 };
 
 const props = defineProps<Props>();
@@ -12,115 +12,85 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <div :class="['product-card', `product-card--${product.range}`, props.class]">
+  <div :class="['product-card', 'p-2', props.class]">
 
-    <div v-if="props.product.tag" class="product-card__tag">
-      {{ props.product.tag }}
+
+    <div class="content py-5">
+
+      <span class="tag p-1" :class="`color--${props.product.range}`">
+        {{ props.product.tag }}
+      </span>
+
+      <div class="w-100 overflow-hidden">
+        <img :src="`/product-images/${product.productCode}.png`" width="400" :alt="product.name" />
+      </div>
+      <div class="bellow-img flex-grow-1 d-flex flex-column align-items-start">
+        <h3 class="prep mb-1">{{ product.name }}</h3>
+        <p class="h4 small mb-0">
+          <span>{{ product.description }}</span>
+        </p>
+        <div class="mt-3 flex-grow-1 d-flex align-items-end">
+
+
+          <template v-if="product.price !== undefined">
+            <Button :range="product.range">
+              {{ product.price }}€ Buy Now
+            </Button>
+          </template>
+          <template v-else>
+            <Button :range="product.range">
+              Out Of Stock
+            </Button>
+          </template>
+
+        </div>
+      </div>
+
+
+
     </div>
 
-    <div class="product-card__image-wrapper">
-      <img :src="`/product-images/${product.productCode}.png`" :alt="product.name" class="product-card__image" />
-    </div>
 
-    <h2 class="product-card__title">
-      {{ `_${product.name}` }}
-    </h2>
 
-    <p class="product-card__subtitle">
-      {{ product.description }}
-    </p>
-
-    <div class="product-card__bottom">
-      <template v-if="product.price !== undefined">
-        <Button :range="product.range">
-          {{ product.price }}€ Buy Now
-        </Button>
-      </template>
-      <template v-else>
-        <Button :range="product.range" class="product-card__outofstock">
-          Out Of Stock
-        </Button>
-      </template>
-    </div>
 
   </div>
 </template>
 
 
 <style lang="scss" scoped>
-
 .product-card {
-  position: relative;
-  background: #eee;
-  padding: 1rem;
 
-  /* Each range could have a top bar or accent color: 
-     here's a generic example if you want a left border or background. */
-  &--lab {
-    // e.g. you might highlight a border:
-    border-left: 0.5rem solid $lab;
+  background-color: $bg-card;
+  background-clip: content-box;
+
+  .content {
+
+    position: relative;
+
+    .tag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $bg-main;
+      text-transform: uppercase;
+    }
   }
 
-  &--brute {
-    border-left: 0.5rem solid $brute;
+  .bellow-img {
+    padding: 2rem 1.5rem 0;
   }
 
-  &--freak {
-    border-left: 0.5rem solid $freak;
+  img {
+    position: relative;
+    left: 4rem;
+
+    transition: left 0.3s ease-in-out;
+
+    &:hover {
+      left: 2rem;
+    }
+
   }
 
-  &--step {
-    border-left: 0.5rem solid $step;
-  }
-
-  &--fuse {
-    border-left: 0.5rem solid $fuse;
-  }
-
-  &--small {
-    width: 300px;
-  }
-
-  &--big {
-    width: 500px;
-  }
-
-  &__tag {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    padding: 0.2rem 0.4rem;
-  }
-
-  &__image-wrapper {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  &__image {
-    max-width: 100%;
-    object-fit: contain;
-  }
-
-  &__title {
-    margin-bottom: 0.5rem;
-  }
-
-  &__subtitle {
-    margin-bottom: 1rem;
-  }
-
-  &__bottom {
-    margin-top: 1rem;
-  }
-
-  &__outofstock {
-    /* Give an alternate style if needed */
-    opacity: 0.6;
-  }
 }
 </style>

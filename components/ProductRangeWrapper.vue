@@ -40,102 +40,39 @@ function t(key: Range | `${Range}-description`) {
 </script>
 
 <template>
-    <div :class="props.class">
-        <section :class="[
-            'product-range-header',
-            `product-range-header--${props.range}`
-        ]">
-            <!-- Left text block -->
-            <div class="product-range-header__content">
-                <!-- Title, e.g. _Lab / Range -->
-                <h1 class="product-range-header__title">
-                    {{ `_${t(props.range)}` }}<br />
-                    <h2>Range</h2>
-                </h1>
 
-                <!-- Hard-coded description for now -->
-                <p class="product-range-header__description">
-                    {{ t(`${props.range}-description`) }}
-                </p>
+  <section :class="props.class" class="section range-header py-5 mt-3 w-100 theme-lab overflow-hidden">
+    <div class="container">
+      <div class="row gutter-lg">
+        <div class="col-12 col-lg-4">
 
-                <Button range="lab">
-                    Discover the range
-                </Button>
+          <h2 class="mb-2 text-capitalize">
+            <span class="d-flex prep">
+              {{ t(props.range) }}
+            </span>
+            <small class="d-block">range</small>
+          </h2>
+          <p class="mb-3 small">
+            {{ t(`${props.range}-description`) }}
+          </p>
 
-            </div>
+          <a href="/ranges/lab" class="link-base btn btn-primary" role="button">
+            Discover the range
+          </a>
 
-            <!-- Bold geometric shapes / background accent 
-           This is just an example shape container -->
-            <div class="product-range-header__shapes"></div>
-        </section>
-        <slot></slot>
+        </div>
+        <div class="col-12 col-lg-8 pt-4 pt-lg-0">
+
+        </div>
+
+      </div>
     </div>
+  </section>
+
+  <slot></slot>
 </template>
 
 
 <style scoped lang="scss">
 
-.product-range-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 2rem;
-    background: #fff;
-    /* or your chosen background */
-    position: relative;
-
-    &__content {
-        max-width: 400px;
-        z-index: 10;
-    }
-
-    &__title {
-        margin-bottom: 0.5rem;
-    }
-
-    &__description {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-        line-height: 1.4;
-    }
-
-    &__button {
-        background: black;
-        color: white;
-        border: none;
-        padding: 0.75rem 1.5rem;
-        cursor: pointer;
-        font-family: 'supply', sans-serif;
-        /* adapt as needed */
-    }
-
-    /* The big shape area */
-    &__shapes {
-        /* You can position your colored rectangles / shapes here */
-        width: 50%;
-        height: 200px;
-        margin-left: 2rem;
-    }
-
-    /* The color depends on the range prop */
-    &--lab .product-range-header__shapes {
-        background-color: $lab;
-    }
-
-    &--fuse .product-range-header__shapes {
-        background-color: $fuse;
-    }
-
-    &--brute .product-range-header__shapes {
-        background-color: $brute;
-    }
-
-    &--freak .product-range-header__shapes {
-        background-color: $freak;
-    }
-
-    &--step .product-range-header__shapes {
-        background-color: $step;
-    }
-}
 </style>
