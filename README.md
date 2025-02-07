@@ -6,7 +6,6 @@
 
 💅 **Storybook** [arturia-storybook.ameliart.fr](https://arturia-storybook.ameliart.fr)
 
-
 As part of a stage 2 interview with Arturia for a Web Integrator position, I decided to take on the challenge of roughly reproducing their website.  
 
 ⚠️ **Disclaimer:** I know this isn't perfect or even good, far from it! I put this together in **less than 24 hours** with zero prior experience in this stack. The goal was just to explore and get a feel for the tech Arturia uses.  
@@ -17,6 +16,7 @@ As part of a stage 2 interview with Arturia for a Web Integrator position, I dec
 - SCSS  
 - Bootstrap  
 - TypeScript  
+- Storybook
 
 ### My Usual Stack:
 - React  
@@ -25,6 +25,7 @@ As part of a stage 2 interview with Arturia for a Web Integrator position, I dec
 - TypeScript  
 - React Router (actually type-route)
 - MUI  
+- Storybook
 
 I was able to transfer some of my knowledge, but there's still a lot to learn. So yeah, **don't judge too harshly**—this was just me experimenting 🥹
 
