@@ -48,10 +48,10 @@ function t(key: Range | `${Range}-description`) {
             <!-- Left text block -->
             <div class="product-range-header__content">
                 <!-- Title, e.g. _Lab / Range -->
-                <h2 class="product-range-header__title">
+                <h1 class="product-range-header__title">
                     {{ `_${t(props.range)}` }}<br />
-                    Range
-                </h2>
+                    <h2>Range</h2>
+                </h1>
 
                 <!-- Hard-coded description for now -->
                 <p class="product-range-header__description">
@@ -96,9 +96,6 @@ $step: #9ccc65;
     }
 
     &__title {
-        font-family: 'supply', sans-serif;
-        /* adapt as needed */
-        font-size: 2rem;
         margin-bottom: 0.5rem;
     }
 

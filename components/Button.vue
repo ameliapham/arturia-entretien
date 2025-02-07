@@ -21,8 +21,6 @@ const rangeClass = computed(() => `btn--${props.range}`);
 <style lang="scss" scoped>
 
 .btn {
-  font-family: 'supply', sans-serif;
-  font-size: 1rem;
   padding: 0.6rem 1rem;
   border: none;
   cursor: pointer;

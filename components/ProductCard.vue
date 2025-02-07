@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Typography from '@/components/Typography.vue';
 import Button from '@/components/Button.vue';
 import type { Product } from "@/composables/Product";
 
@@ -23,13 +22,13 @@ const props = defineProps<Props>();
       <img :src="`/product-images/${product.productCode}.png`" :alt="product.name" class="product-card__image" />
     </div>
 
-    <Typography variant="title" class="product-card__title">
+    <h2 class="product-card__title">
       {{ `_${product.name}` }}
-    </Typography>
+    </h2>
 
-    <Typography variant="body" class="product-card__subtitle">
+    <p class="product-card__subtitle">
       {{ product.description }}
-    </Typography>
+    </p>
 
     <div class="product-card__bottom">
       <template v-if="product.price !== undefined">
