@@ -1,75 +1,38 @@
-# Nuxt Minimal Starter
+# Arturia.com Reproduction (for fun & learning)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+🔗 **Live version:** [arturia-repro.ameliart.fr](https://arturia-repro.ameliart.fr)  
+🎨 **Figma:** [Figma prototype](https://www.figma.com/proto/WgNl9ZDDdzyzK45q0zYLcF/Arturia?page-id=1%3A3&node-id=1-1251&viewport=299%2C318%2C0.22&t=fXFDK9mZELT6NZqW-1&scaling=scale-down-width&content-scaling=fixed)  
 
-## Setup
+As part of a stage 2 interview with Arturia for a Web Integrator position, I decided to take on the challenge of roughly reproducing their website.  
 
-Make sure to install dependencies:
+⚠️ **Disclaimer:** I know this isn't perfect or even good, far from it! I put this together in **less than 24 hours** with zero prior experience in this stack. The goal was just to explore and get a feel for the tech Arturia uses.  
+
+### Tech Stack Used:
+- Vue 3  
+- Nuxt  
+- SCSS  
+- Bootstrap  
+- TypeScript  
+
+### My Usual Stack:
+- React  
+- Vite  
+- CSS-in-JS (tss-react)  
+- TypeScript  
+- React Router  
+- MUI  
+
+I was able to transfer some of my knowledge, but there's still a lot to learn. So yeah, **don't judge too harshly**—this was just me experimenting 🥹
+
+---
+
+## 🛠 How to Run It
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
+git clone https://github.com/ameliapham/arturia-entretien
+cd arturia-entretien
 bun install
+bun dev
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+That's it! 🚀  
