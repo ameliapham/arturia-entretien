@@ -1,6 +1,8 @@
 # Arturia.com Reproduction (for fun & learning)
 
-🔗 **Live version:** [arturia-repro.ameliart.fr](https://arturia-repro.ameliart.fr)  
+🔗 **Live version:**:  
+   - Product Page: [arturia-repro.ameliart.fr/products](https://arturia-repro.ameliart.fr/products)  
+   - Home Page: [arturia-repro.ameliart.fr](https://arturia-repro.ameliart.fr/)
 🎨 **Figma:** [Figma prototype](https://www.figma.com/proto/WgNl9ZDDdzyzK45q0zYLcF/Arturia?page-id=1%3A3&node-id=1-1251&viewport=299%2C318%2C0.22&t=fXFDK9mZELT6NZqW-1&scaling=scale-down-width&content-scaling=fixed)  
 
 As part of a stage 2 interview with Arturia for a Web Integrator position, I decided to take on the challenge of roughly reproducing their website.  
@@ -23,6 +25,11 @@ As part of a stage 2 interview with Arturia for a Web Integrator position, I dec
 - MUI  
 
 I was able to transfer some of my knowledge, but there's still a lot to learn. So yeah, **don't judge too harshly**—this was just me experimenting 🥹
+
+## Data
+
+The actual Arturia website is powered by a GraphQL API. Here the data are hardcoded in a big JavaScript object
+and manipulated synchronously.  
 
 ---
 
