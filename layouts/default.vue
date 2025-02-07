@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
