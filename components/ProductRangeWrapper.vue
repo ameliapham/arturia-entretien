@@ -41,8 +41,8 @@ function t(key: Range | `${Range}-description`) {
 
 <template>
 
-  <section :class="props.class" class="section range-header py-5 mt-3 w-100 theme-lab overflow-hidden">
-    <div class="container">
+  <section :class="props.class" class="product-wrapper section range-header py-5 mt-3 w-100 theme-lab overflow-hidden p-4">
+    <div class="container mb-5">
       <div class="row gutter-lg">
         <div class="col-12 col-lg-4">
 
@@ -56,9 +56,9 @@ function t(key: Range | `${Range}-description`) {
             {{ t(`${props.range}-description`) }}
           </p>
 
-          <a href="/ranges/lab" class="link-base btn btn-primary" role="button">
-            Discover the range
-          </a>
+          <Button
+            :range="props.range"
+          >Discover the range</Button>
 
         </div>
         <div class="col-12 col-lg-8 pt-4 pt-lg-0">
@@ -67,12 +67,18 @@ function t(key: Range | `${Range}-description`) {
 
       </div>
     </div>
+    <slot></slot>
   </section>
 
-  <slot></slot>
 </template>
 
 
 <style scoped lang="scss">
+
+.product-wrapper {
+  background-color: $bg-main;
+}
+
+
 
 </style>
