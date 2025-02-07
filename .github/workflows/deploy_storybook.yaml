@@ -17,9 +17,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '20'
-    - uses: bahmutov/npm-install@v1
-      env:
-        XDG_CACHE_HOME: "/home/runner/.cache/yarn"
+    - run: bun install
     - run: npx storybook build -o ./build_storybook 
     - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${{github.repository}}.git
       env:
