@@ -70,7 +70,7 @@
 
 <style scoped lang="scss">
 .background-video {
-  width: 100%;
+  height: 100vh;
   display: block;
   margin: 0 auto; /* Center the video */
 }
