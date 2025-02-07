@@ -70,9 +70,9 @@
 
 <style scoped lang="scss">
 .background-video {
-  height: 100vh;
+  height: 101%;
   display: block;
-  margin: 0 auto; /* Center the video */
+  margin: 0 auto;
 }
 .content {
   position: absolute;
