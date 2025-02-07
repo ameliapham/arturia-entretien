@@ -19,7 +19,7 @@ As part of a stage 2 interview with Arturia for a Web Integrator position, I dec
 - Vite  
 - CSS-in-JS (tss-react)  
 - TypeScript  
-- React Router  
+- React Router (actually type-route)
 - MUI  
 
 I was able to transfer some of my knowledge, but there's still a lot to learn. So yeah, **don't judge too harshly**—this was just me experimenting 🥹
