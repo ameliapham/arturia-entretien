@@ -47,12 +47,12 @@ function getCategoriesLink(categories: readonly Category[]) {
 
 <template>
     <CategorySelector 
-        class="my-4"
+        class="category-selector my-4"
         :categories="categories" 
         :getCategoriesLink="getCategoriesLink" 
     />
 
-    <div class="container">
+    <div class="container page-product">
         <template v-for="(products, range) in filteredProductsByRange">
             <ProductRangeWrapper v-if="products.length" :key="range" :range="range">
                 <div class="row">
@@ -65,4 +65,18 @@ function getCategoriesLink(categories: readonly Category[]) {
 </template>
 
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+    .page-product {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .category-selector {
+        // sticky top
+        position: sticky;
+        top: 1rem;
+        z-index: 100;
+    }
+
+</style>

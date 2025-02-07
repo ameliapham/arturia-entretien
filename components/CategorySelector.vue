@@ -25,7 +25,7 @@ function t(categoryGroup: CategoryGroup): string {
 </script>
 
 <template>
-    <nav class="category-selector py-2 container">
+    <nav class="category-selector py-2 container px-5">
         <ul class="navbar-nav flex-row d-lg-flex flex-wrap justify-content-center">
             <li v-for="categoryGroup in allCategoryGroups" :key="categoryGroup">
                 <NuxtLink :to="props.getCategoriesLink(getCategoriesFromCategoryGroup(categoryGroup))"
@@ -59,6 +59,10 @@ function t(categoryGroup: CategoryGroup): string {
     a {
         text-decoration: none;
         color: $typo-primary-color;
+
+        &:hover {
+            color: $color-secondary;
+        }
     }
 
 

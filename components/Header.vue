@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <header class="header">
+  <header class="header py-4">
     <nav>
       <ul>
         <li>
@@ -27,12 +27,12 @@
 <style scoped lang="scss">
 .header {
   background-color: #f5f5f5;
-  padding: 1rem;
 
   ul {
     display: flex;
     list-style: none;
     justify-content: center;
+    margin-bottom:0;
 
     li {
       margin-right: 1rem;
