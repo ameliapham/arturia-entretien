@@ -1,9 +1,74 @@
 @use "variables" as *;
 
-body {
-  margin: 0;
+@font-face {
+  font-family: "supply";
+  src: url("../fonts/PPSupplyMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "supply";
+  src: url("../fonts/PPSupplyMono-UltraLight.woff") format("woff");
+  // TODO: We need 100
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  font-family: supply;
+  margin: 0;
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  margin: 0;
+  text-align: var(--bs-body-text-align);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.prep {
+
+  &::before {
+    content: "_";
+  }
+
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+small, .small {
+  // TODO: We need 100
+  //font-weight: 100;
+  font-weight: 200 !important;
+}
+
+.color--lab {
+  color: $lab;
+}
+
+.color--brute {
+  color: $brute;
+}
+
+.color--freak {
+  color: $freak;
+}
+
+.color--step {
+  color: $step;
+}
+
+.color--fuse {
+  color: $fuse;
+}
+
+
+/*
 h1 {
   font-family: "PPSupplyMono-Regular", monospace;
   font-weight: 400;
@@ -28,17 +93,4 @@ button {
   font-family: "PPSupplyMono-UltraLight", monospace;
   font-weight: 200;
 }
-
-@font-face {
-  font-family: "PPSupplyMono-UltraLight";
-  src: url("~/assets/fonts/PPSupplyMono/PPSupplyMono-UltraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PPSupplyMono-Regular";
-  src: url("~/assets/fonts/PPSupplyMono/PPSupplyMono-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+  */
