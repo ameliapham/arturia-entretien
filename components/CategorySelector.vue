@@ -39,16 +39,25 @@ function t(categoryGroup: CategoryGroup): string {
 
 <style scoped lang="scss">
 .category-selector {
-
     background-color: $bg-app-white;
+    position: relative;
+    padding-left: 1.5rem; 
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 8px; 
+        background-color: $color-secondary;
+    }
 
     .active {
         color: $color-secondary;
-        position: relative;
     }
 
     ul {
-        //display: flex;
         list-style: none;
         justify-content: center;
         padding: 0;
@@ -64,8 +73,5 @@ function t(categoryGroup: CategoryGroup): string {
             color: $color-secondary;
         }
     }
-
-
-
 }
 </style>
