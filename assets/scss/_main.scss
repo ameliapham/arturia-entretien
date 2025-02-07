@@ -1,35 +1,43 @@
-// If you want to use the variables inside _main.scss itself, do:
 @use "variables" as *;
 
-// Then add your global or reset styles:
 body {
   margin: 0;
 }
 
 h1 {
-  font-family: "PPSupplyMono", monospace;
+  font-family: "PPSupplyMono-Regular", monospace;
   font-weight: 400;
 }
 
+h2 {
+  font-family: "PPSupplyMono-UltraLight", monospace;
+  font-weight: 100;
+}
+
 p {
-  font-family: "PPSupplyMono", monospace;
+  font-family: "PPSupplyMono-Regular", monospace;
   font-weight: 200;
 }
 
 li {
-  font-family: "PPSupplyMono", monospace;
+  font-family: "PPSupplyMono-Regular", monospace;
   font-weight: 400;
 }
 
+button {
+  font-family: "PPSupplyMono-UltraLight", monospace;
+  font-weight: 200;
+}
+
 @font-face {
-  font-family: "PPSupplyMono";
+  font-family: "PPSupplyMono-UltraLight";
   src: url("~/assets/fonts/PPSupplyMono/PPSupplyMono-UltraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PPSupplyMono";
+  font-family: "PPSupplyMono-Regular";
   src: url("~/assets/fonts/PPSupplyMono/PPSupplyMono-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
