@@ -46,7 +46,11 @@ function getCategoriesLink(categories: readonly Category[]) {
 </script>
 
 <template>
-    <CategorySelector :categories="categories" :getCategoriesLink="getCategoriesLink" />
+    <CategorySelector 
+        class="my-4"
+        :categories="categories" 
+        :getCategoriesLink="getCategoriesLink" 
+    />
 
     <div class="container">
         <template v-for="(products, range) in filteredProductsByRange">

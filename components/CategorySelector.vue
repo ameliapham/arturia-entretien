@@ -1,17 +1,3 @@
-<template>
-    <nav>
-        <ul>
-            <li v-for="categoryGroup in allCategoryGroups" :key="categoryGroup">
-                <NuxtLink :to="props.getCategoriesLink(getCategoriesFromCategoryGroup(categoryGroup))"
-                    :class="{ active: categoryGroup_active === categoryGroup }">
-                    {{ t(categoryGroup) }}
-                </NuxtLink>
-            </li>
-        </ul>
-    </nav>
-</template>
-
-
 <script setup lang="ts">
 
 import { type CategoryGroup, allCategoryGroups, type Category, getCategoryGroupFromCategories, getCategoriesFromCategoryGroup } from "~/composables/Category";
@@ -38,19 +24,44 @@ function t(categoryGroup: CategoryGroup): string {
 }
 </script>
 
+<template>
+    <nav class="category-selector py-2 container">
+        <ul class="navbar-nav flex-row d-lg-flex flex-wrap justify-content-center">
+            <li v-for="categoryGroup in allCategoryGroups" :key="categoryGroup">
+                <NuxtLink :to="props.getCategoriesLink(getCategoriesFromCategoryGroup(categoryGroup))"
+                    :class="{ active: categoryGroup_active === categoryGroup }">
+                    {{ t(categoryGroup) }}
+                </NuxtLink>
+            </li>
+        </ul>
+    </nav>
+</template>
+
 <style scoped lang="scss">
+.category-selector {
+
+    background-color: $bg-app-white;
+
     .active {
         color: $color-secondary;
         position: relative;
     }
+
     ul {
-        display: flex;
+        //display: flex;
         list-style: none;
         justify-content: center;
         padding: 0;
         gap: 24px;
+        margin-bottom: 0;
     }
+
     a {
         text-decoration: none;
+        color: $typo-primary-color;
     }
+
+
+
+}
 </style>
