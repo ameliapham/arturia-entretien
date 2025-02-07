@@ -1,0 +1,8 @@
+// If you want to use the variables inside _main.scss itself, do:
+@use "variables" as *;
+
+// Then add your global or reset styles:
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
