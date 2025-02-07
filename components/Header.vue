@@ -10,13 +10,13 @@
     <nav>
       <ul>
         <li>
-          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/">_Home</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/product">Product</NuxtLink>
+          <NuxtLink to="/product">_Product</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/support">Support</NuxtLink>
+          <NuxtLink to="/support">_Support</NuxtLink>
         </li>
       </ul>
     </nav>
@@ -32,10 +32,16 @@
   ul {
     display: flex;
     list-style: none;
+    justify-content: center;
 
     li {
       margin-right: 1rem;
     }
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
   }
 
   .router-link-active {
