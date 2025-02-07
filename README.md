@@ -4,6 +4,9 @@
 
 🎨 **Figma:** [Figma prototype](https://www.figma.com/proto/WgNl9ZDDdzyzK45q0zYLcF/Arturia?page-id=1%3A3&node-id=1-1251&viewport=299%2C318%2C0.22&t=fXFDK9mZELT6NZqW-1&scaling=scale-down-width&content-scaling=fixed)  
 
+💅 **Storybook** [arturia-storybook.ameliart.fr](https://arturia-storybook.ameliart.fr)
+
+
 As part of a stage 2 interview with Arturia for a Web Integrator position, I decided to take on the challenge of roughly reproducing their website.  
 
 ⚠️ **Disclaimer:** I know this isn't perfect or even good, far from it! I put this together in **less than 24 hours** with zero prior experience in this stack. The goal was just to explore and get a feel for the tech Arturia uses.  
@@ -39,6 +42,12 @@ git clone https://github.com/ameliapham/arturia-entretien
 cd arturia-entretien
 bun install
 bun dev
+```
+
+## 💅 Run Storybook
+
+```bash
+bun run storybook
 ```
 
 That's it! 🚀  

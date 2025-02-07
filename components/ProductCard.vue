@@ -13,14 +13,10 @@ const props = defineProps<Props>();
 
 <template>
   <div :class="['product-card', 'p-2', props.class]">
-
-
     <div class="content py-5">
-
-      <span class="tag p-1" :class="`color--${props.product.range}`">
+      <span v-if="props.product.tag !== undefined" class="tag p-1" :class="`color--${props.product.range}`">
         {{ props.product.tag }}
       </span>
-
       <div class="w-100 overflow-hidden">
         <img :src="`/product-images/${product.productCode}.png`" width="400" :alt="product.name" />
       </div>
@@ -30,8 +26,6 @@ const props = defineProps<Props>();
           <span>{{ product.description }}</span>
         </p>
         <div class="mt-3 flex-grow-1 d-flex align-items-end">
-
-
           <template v-if="product.price !== undefined">
             <Button :range="product.range">
               {{ product.price }}€ Buy Now
@@ -45,14 +39,7 @@ const props = defineProps<Props>();
 
         </div>
       </div>
-
-
-
     </div>
-
-
-
-
   </div>
 </template>
 
