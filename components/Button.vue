@@ -24,7 +24,7 @@ const rangeClass = computed(() => `btn--${props.range}`);
   padding: 0.6rem 1rem;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: $typo-primary-contrast-color;
 
   &--lab {
     background-color: $lab;
@@ -37,6 +37,7 @@ const rangeClass = computed(() => `btn--${props.range}`);
   }
   &--step {
     background-color: $step;
+    color: $typo-primary-color;
   }
   &--fuse {
     background-color: $fuse;
