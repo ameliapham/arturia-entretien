@@ -1,7 +1,7 @@
 <template>
     <!-- We choose an HTML tag based on the variant, but you could adapt as needed. -->
     <component :is="tagName" :class="['typography', variantClass, props.class]">
-        <slot />
+        <slot></slot>
     </component>
 </template>
 
