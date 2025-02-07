@@ -7,6 +7,9 @@
       <div class="news-content">
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
+        <Button range="lab">
+          <slot></slot>
+        </Button>
       </div>
     </div>
   </template>
