@@ -4,8 +4,8 @@ import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import ProductCard from '~/components/ProductCard.vue'
 import ProductRangeWrapper from '~/components/ProductRangeWrapper.vue';
-import { parseCategoryQueryParam, serializeCategoryQueryParam, type Category } from "~/composables/Category";
-import { getFilteredProductsByRange } from "~/composables/Product";
+import { parseCategoryQueryParam, serializeCategoryQueryParam, type Category } from "~/data/Category";
+import { getFilteredProductsByRange } from "~/data/Product";
 import CategorySelector from "~/components/CategorySelector.vue";
 
 const route = useRoute();

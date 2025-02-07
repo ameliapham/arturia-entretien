@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from "@storybook/vue3";
 import ProductCard from "./ProductCard.vue";
-import type { Product } from "@/composables/Product";
+import type { Product } from "@/data/Product";
 
 export default {
   title: "Components/ProductCard",

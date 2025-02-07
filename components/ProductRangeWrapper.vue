@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import type { Range } from "@/composables/Product";
+import type { Range } from "@/data/Product";
 import Button from "@/components/Button.vue";
 
 const props = defineProps<{

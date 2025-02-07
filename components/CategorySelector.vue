@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { type CategoryGroup, allCategoryGroups, type Category, getCategoryGroupFromCategories, getCategoriesFromCategoryGroup } from "~/composables/Category";
+import { type CategoryGroup, allCategoryGroups, type Category, getCategoryGroupFromCategories, getCategoriesFromCategoryGroup } from "~/data/Category";
 import type { RouteLocationRaw } from "vue-router";
 
 const props = defineProps<{

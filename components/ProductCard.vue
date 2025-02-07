@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Button from '@/components/Button.vue';
-import type { Product } from "@/composables/Product";
+import type { Product } from "@/data/Product";
 
 type Props = {
   product: Product;
