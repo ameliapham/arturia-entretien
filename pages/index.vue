@@ -82,7 +82,7 @@
   height: 300px;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  color: $color;
+  color: $color-text;
   padding: 24px;
 }
 .products {
@@ -102,7 +102,7 @@
   width: 400px;
   background-color: rgba(91, 71, 65, 0.3);
   backdrop-filter: blur(10px);
-  color: $color;
+  color: $color-text;
   padding: 24px;
 }
 .news {

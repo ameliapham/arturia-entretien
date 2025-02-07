@@ -74,12 +74,6 @@ function t(key: Range | `${Range}-description`) {
 
 
 <style scoped lang="scss">
-/* Example brand colors */
-$lab: #1d41b2;
-$fuse: #9c27b0;
-$brute: #ff3d00;
-$freak: #ff9800;
-$step: #9ccc65;
 
 .product-range-header {
     display: flex;

@@ -40,8 +40,18 @@ function t(categoryGroup: CategoryGroup): string {
 </script>
 
 <style scoped lang="scss">
-.active {
-    color: #00cfd4;
-    position: relative;
-}
+    .active {
+        color: $color-secondary;
+        position: relative;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        gap: 24px;
+    }
+    a {
+        text-decoration: none;
+    }
 </style>

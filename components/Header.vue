@@ -45,7 +45,7 @@
   }
 
   .router-link-active {
-    border: 1px solid red;
+    color: $color-secondary;
   }
 
 }
