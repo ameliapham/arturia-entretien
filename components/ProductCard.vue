@@ -60,7 +60,7 @@ const props = defineProps<Props>();
 <style lang="scss" scoped>
 .product-card {
 
-  background-color: $bg-card;
+  background-color: $bg-app-grey;
   background-clip: content-box;
 
   .content {
@@ -71,7 +71,7 @@ const props = defineProps<Props>();
       position: absolute;
       top: 0;
       right: 0;
-      background-color: $bg-main;
+      background-color: $bg-app-white;
       text-transform: uppercase;
     }
   }

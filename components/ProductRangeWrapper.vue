@@ -76,7 +76,7 @@ function t(key: Range | `${Range}-description`) {
 <style scoped lang="scss">
 
 .product-wrapper {
-  background-color: $bg-main;
+  background-color: $bg-app-white;
 }
 
 
