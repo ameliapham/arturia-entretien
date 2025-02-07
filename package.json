@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -16,6 +18,14 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "sass": "^1.83.4"
+    "@chromatic-com/storybook": "^3.2.4",
+    "@nuxtjs/storybook": "^8.3.3",
+    "@storybook/addon-essentials": "^8.5.3",
+    "@storybook/addon-interactions": "^8.5.3",
+    "@storybook/blocks": "^8.5.3",
+    "@storybook/test": "^8.5.3",
+    "@storybook/vue3": "^8.5.3",
+    "sass": "^1.83.4",
+    "storybook": "^8.5.3"
   }
 }
