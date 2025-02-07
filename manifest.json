@@ -5,8 +5,20 @@
     "src": ".storybook/preview.ts",
     "isDynamicEntry": true
   },
-  "_1eE1ZzpC.js": {
-    "file": "_nuxt/1eE1ZzpC.js",
+  "_B8V30-Tc.js": {
+    "file": "_nuxt/B8V30-Tc.js",
+    "name": "nuxt-link",
+    "imports": [
+      "_BAc_ZpKr.js",
+      "_vcerkM77.js"
+    ]
+  },
+  "_BAc_ZpKr.js": {
+    "file": "_nuxt/BAc_ZpKr.js",
+    "name": "vue.esm-bundler"
+  },
+  "_BTivlYSm.js": {
+    "file": "_nuxt/BTivlYSm.js",
     "name": "DocsRenderer-CFRXHY34",
     "isDynamicEntry": true,
     "imports": [
@@ -19,18 +31,6 @@
       "node_modules/@storybook/blocks/dist/Color-F6OSRLHC.mjs",
       "node_modules/@mdx-js/react/index.js"
     ]
-  },
-  "_4ii9aauY.js": {
-    "file": "_nuxt/4ii9aauY.js",
-    "name": "nuxt-link",
-    "imports": [
-      "_BAc_ZpKr.js",
-      "_vDQkWiTA.js"
-    ]
-  },
-  "_BAc_ZpKr.js": {
-    "file": "_nuxt/BAc_ZpKr.js",
-    "name": "vue.esm-bundler"
   },
   "_BmPkBR6u.js": {
     "file": "_nuxt/BmPkBR6u.js",
@@ -71,8 +71,8 @@
       "_nuxt/NewsCard.j8nNAJ-4.css"
     ]
   },
-  "_DknJLdYx.js": {
-    "file": "_nuxt/DknJLdYx.js",
+  "_DbGBJXid.js": {
+    "file": "_nuxt/DbGBJXid.js",
     "name": "ProductCard",
     "imports": [
       "_BAc_ZpKr.js",
@@ -80,7 +80,7 @@
       "_DlAUqK2U.js"
     ],
     "css": [
-      "_nuxt/ProductCard.CAutV1Ou.css"
+      "_nuxt/ProductCard.Cj1PY4vy.css"
     ]
   },
   "_DlAUqK2U.js": {
@@ -91,9 +91,9 @@
     "file": "_nuxt/NewsCard.j8nNAJ-4.css",
     "src": "_NewsCard.j8nNAJ-4.css"
   },
-  "_ProductCard.CAutV1Ou.css": {
-    "file": "_nuxt/ProductCard.CAutV1Ou.css",
-    "src": "_ProductCard.CAutV1Ou.css"
+  "_ProductCard.Cj1PY4vy.css": {
+    "file": "_nuxt/ProductCard.Cj1PY4vy.css",
+    "src": "_ProductCard.Cj1PY4vy.css"
   },
   "_ogSvIofg.js": {
     "file": "_nuxt/ogSvIofg.js",
@@ -103,8 +103,8 @@
     "file": "_nuxt/preview.DJftzFe3.css",
     "src": "_preview.DJftzFe3.css"
   },
-  "_vDQkWiTA.js": {
-    "file": "_nuxt/vDQkWiTA.js",
+  "_vcerkM77.js": {
+    "file": "_nuxt/vcerkM77.js",
     "name": "preview",
     "isDynamicEntry": true,
     "imports": [
@@ -146,19 +146,19 @@
     ]
   },
   "components/ProductCard.stories.ts": {
-    "file": "_nuxt/BKzsZqZW.js",
+    "file": "_nuxt/Bv0INKG4.js",
     "name": "ProductCard.stories",
     "src": "components/ProductCard.stories.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_DknJLdYx.js",
+      "_DbGBJXid.js",
       "_BAc_ZpKr.js",
       "_Cgd-zBkn.js",
       "_DlAUqK2U.js"
     ]
   },
   "iframe.html": {
-    "file": "_nuxt/Bt49T2f3.js",
+    "file": "_nuxt/CdxUN8PU.js",
     "name": "iframe",
     "src": "iframe.html",
     "isEntry": true,
@@ -167,7 +167,7 @@
       "components/ProductCard.stories.ts",
       "_BmPkBR6u.js",
       "node_modules/@storybook-vue/nuxt/node_modules/@storybook/vue3/dist/entry-preview-docs.mjs",
-      "_vDQkWiTA.js",
+      "_vcerkM77.js",
       "node_modules/@storybook/addon-essentials/dist/actions/preview.mjs",
       "node_modules/@storybook/addon-essentials/dist/docs/preview.mjs",
       "node_modules/@storybook/addon-essentials/dist/backgrounds/preview.mjs",
@@ -180,29 +180,29 @@
     ]
   },
   "layouts/default.vue": {
-    "file": "_nuxt/BQherhMd.js",
+    "file": "_nuxt/CQvSsPGo.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "_BAc_ZpKr.js",
-      "_4ii9aauY.js",
+      "_B8V30-Tc.js",
       "_DlAUqK2U.js",
-      "_vDQkWiTA.js",
+      "_vcerkM77.js",
       "_BmPkBR6u.js",
       "iframe.html"
     ],
     "css": [
-      "_nuxt/default.DO5Zza6o.css"
+      "_nuxt/default.BQcxDmMm.css"
     ]
   },
   "node_modules/@mdx-js/react/index.js": {
-    "file": "_nuxt/SlEMnlas.js",
+    "file": "_nuxt/b3xkLCqG.js",
     "name": "index",
     "src": "node_modules/@mdx-js/react/index.js",
     "isDynamicEntry": true,
     "imports": [
-      "_1eE1ZzpC.js",
+      "_BTivlYSm.js",
       "iframe.html",
       "_Bx-go_-4.js",
       "_ogSvIofg.js"
@@ -234,7 +234,7 @@
     ]
   },
   "node_modules/@storybook/addon-essentials/dist/docs/preview.mjs": {
-    "file": "_nuxt/CGHpyYuo.js",
+    "file": "_nuxt/OG-WjgCb.js",
     "name": "preview",
     "src": "node_modules/@storybook/addon-essentials/dist/docs/preview.mjs",
     "isDynamicEntry": true,
@@ -242,7 +242,7 @@
       "iframe.html"
     ],
     "dynamicImports": [
-      "_1eE1ZzpC.js"
+      "_BTivlYSm.js"
     ]
   },
   "node_modules/@storybook/addon-essentials/dist/highlight/preview.mjs": {
@@ -279,31 +279,31 @@
     "isDynamicEntry": true
   },
   "node_modules/@storybook/blocks/dist/Color-F6OSRLHC.mjs": {
-    "file": "_nuxt/6WXcVJ05.js",
+    "file": "_nuxt/CryU_IgU.js",
     "name": "Color-F6OSRLHC",
     "src": "node_modules/@storybook/blocks/dist/Color-F6OSRLHC.mjs",
     "isDynamicEntry": true,
     "imports": [
-      "_1eE1ZzpC.js",
+      "_BTivlYSm.js",
       "iframe.html",
       "_Bx-go_-4.js",
       "_ogSvIofg.js"
     ]
   },
   "node_modules/storybook/core/components/index.js": {
-    "file": "_nuxt/iUzx8wK8.js",
+    "file": "_nuxt/DISCIjqn.js",
     "name": "index",
     "src": "node_modules/storybook/core/components/index.js",
     "isDynamicEntry": true,
     "imports": [
-      "_1eE1ZzpC.js",
+      "_BTivlYSm.js",
       "iframe.html",
       "_Bx-go_-4.js",
       "_ogSvIofg.js"
     ]
   },
   "pages/index.vue": {
-    "file": "_nuxt/ZMzKcBc-.js",
+    "file": "_nuxt/DiGyWNY6.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -311,7 +311,7 @@
       "_Cgd-zBkn.js",
       "_CwfxgDbA.js",
       "_BAc_ZpKr.js",
-      "_vDQkWiTA.js",
+      "_vcerkM77.js",
       "_DlAUqK2U.js",
       "_BmPkBR6u.js",
       "iframe.html"
@@ -321,22 +321,22 @@
     ]
   },
   "pages/product.vue": {
-    "file": "_nuxt/B4WgG50c.js",
+    "file": "_nuxt/CKxt5vQO.js",
     "name": "product",
     "src": "pages/product.vue",
     "isDynamicEntry": true,
     "imports": [
       "_BAc_ZpKr.js",
-      "_vDQkWiTA.js",
-      "_DknJLdYx.js",
+      "_vcerkM77.js",
+      "_DbGBJXid.js",
       "_Cgd-zBkn.js",
       "_DlAUqK2U.js",
-      "_4ii9aauY.js",
+      "_B8V30-Tc.js",
       "_BmPkBR6u.js",
       "iframe.html"
     ],
     "css": [
-      "_nuxt/product.BvQ41qYn.css"
+      "_nuxt/product.D6Ii16Sj.css"
     ]
   },
   "pages/support.vue": {
