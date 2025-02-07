@@ -17,6 +17,9 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '20'
+    - uses: oven-sh/setup-bun@v2
+      with:
+        bun-version: latest
     - run: bun install
     - run: npx storybook build -o ./build_storybook 
     - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${{github.repository}}.git
